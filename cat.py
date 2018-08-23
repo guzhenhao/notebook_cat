@@ -1,4 +1,8 @@
 import json
+import sys
+
+notebook_path1= sys.argv[1]
+notebook_path2= sys.argv[2]
 
 notebook1 = open('1.ipynb')
 notebook1_str = notebook1.read()
