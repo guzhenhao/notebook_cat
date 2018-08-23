@@ -10,23 +10,13 @@ for path in notebook_path_lst:
     notebook = open(path)
     notebook_str = notebook.read()
     notebook_json = json.loads(notebook_str)
-    cells1 = notebook1_json['cell']
+    cells1 = notebook_json['cell']
     cells_str += cells
 
-target_notebook['cells'] = target_lst    
-
-notebook1 = open('1.ipynb')
-notebook1_str = notebook1.read()
-
-notebook1_json =json.loads(notebook1_str)
+target_notebook['cells'] = cells_lst    
 
 
-cells1 = notebook1_json['cells']
 
-notebook2 = open('2.ipynb')
-notebook2_str = notebook2.read()
-
-notebook2_json =json.loads(notebook2_str)
 
 cells2 = notebook2_json['cells']
 
